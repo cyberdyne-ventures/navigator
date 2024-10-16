@@ -16,7 +16,7 @@ st.markdown(
 )
 
 # File uploader for CSV file
-uploaded_file = st.file_uploader("Upload your CSV log file", type=["csv"])
+uploaded_file = st.file_uploader("Upload your CSV log file, sanatizing first if necessary. Do not upload data that is not yours!", type=["csv"])
 
 if uploaded_file is not None:
     # Load CSV data into a pandas DataFrame
