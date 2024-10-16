@@ -64,7 +64,7 @@ if uploaded_file is not None:
     st.markdown("## Anomaly Detection: Choose combinations of least frequently occuring values for hunting outliers")  # More prominent title for least frequent combinations section
     
     # New Feature: Display 10 least frequently occurring combinations of selected fields
-    combo_fields = st.multiselect("Choose fields for combination analysis:", options=df.columns.tolist())
+    combo_fields = st.multiselect("I'd consider combinations like source IP, user context, actions and methods, etc but when in doubt, experiment.", options=df.columns.tolist())
 
     if combo_fields:
         # Group by the selected fields and count occurrences
