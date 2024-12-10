@@ -5,9 +5,12 @@ import requests
 import subprocess
 import sys
 
+
+
 url = "https://api.groq.com/openai/v1/chat/completions"
-variable_name = "GKEY"
-api_key = os.getenv(variable_name)
+
+#variable_name = "GKEY"
+api_key = st.secrets["GKEY"]
 
 if api_key:
     st.write("API key loaded successfully!")
