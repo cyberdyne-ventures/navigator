@@ -5,14 +5,7 @@ import requests
 import subprocess
 import sys
 
-try:
-    import matplotlib.pyplot as plt
-except ImportError:
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "matplotlib"])
-    import matplotlib.pyplot as plt
-
 url = "https://api.groq.com/openai/v1/chat/completions"
-
 variable_name = "GKEY"
 api_key = os.getenv(variable_name)
 
