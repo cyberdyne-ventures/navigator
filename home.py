@@ -12,7 +12,6 @@ def run():
         - Data Compression: A point and click interface for deduplicating rows in a dataframe.
         """
     )
-    st.write("Version: 5 1211")
     st.write("System Information:")
     st.write("Python version:", sys.version)
     #st.write("Python executable:", sys.executable)
