@@ -8,13 +8,14 @@ st.set_page_config(
     page_title="AI Assisted Threat Hunting",  
     page_icon="🧐"  
 )
+st.sidebar.image("logo.png", use_column_width=True) 
 
 st.sidebar.title("Navigation")
 pages = {
     "Home": "home",
     "AI Interface": "ask",    
-    "Anomaly Detection": "anomalies",
-    "Data Compression": "dd"
+    "Anomaly Detection": "anomalies2",
+    "Data Compression": "dd2"
 }
 
 selection = st.sidebar.radio("Go to", list(pages.keys()))
